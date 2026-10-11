@@ -132,6 +132,14 @@ A polished brand should never need imaginary statistics. We show source-linked w
 
 <br/>
 
+### THE INTERACTIVE EXPERIENCE
+
+A portfolio should be explored, not just downloaded. The new [**RISHEH interactive industry portfolio**](./docs/index.html) brings the story to life with subtle motion, sector filtering, bilingual reading, and direct engineering evidence.
+
+> Deployment: GitHub Pages requires **Settings → Pages → Deploy from a branch → main /docs** after merging. The website is not claimed to be live before GitHub confirms publication.
+
+<br/>
+
 ### READ THE PUBLICATION
 
 ## Two languages. One perspective.
