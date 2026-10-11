@@ -34,9 +34,13 @@ At RISHEH, we start with the business problem and work backward toward the right
 
 <br/>
 
-### INDUSTRY SOLUTIONS
+### THE INDUSTRY ATLAS
 
-## Different businesses. Different constraints. One systems mindset.
+## One architecture. Seven business contexts.
+
+<img src="./assets/industry-map.svg" width="100%" alt="A visual map connecting the RISHEH systems approach to seven industry contexts" />
+
+**We don't start with a stack. We start with an operating reality.** Each sector brings its own users, workflows, data responsibilities, and constraints. Our common method becomes a different solution in each context.
 
 The portfolio is organized around the **business environments** we work in—not a generic list of technologies.
 
@@ -55,6 +59,8 @@ The portfolio is organized around the **business environments** we work in—not
 <br/>
 
 ### SELECTED WORK / FIVE DIFFERENT SYSTEMS
+
+> **How to read these stories:** Each project begins with a real product-design question, followed by the documented engineering direction. These are not fictional success stories or claimed business outcomes.
 
 <details open>
 <summary><b>01 — Hamyar School · Education Operating System</b></summary>
@@ -115,6 +121,14 @@ A backend and Telegram-based workflow integrating job ingestion, deterministic m
 [Explore the engineering repository →](https://github.com/mahamirmh/rishehjobnhsbot)
 
 </details>
+
+<br/>
+
+### THE PORTFOLIO PHILOSOPHY
+
+## Fewer promises. Better evidence.
+
+A polished brand should never need imaginary statistics. We show source-linked work, distinguish product documentation from production verification, and keep speculative concepts separate from shipped evidence. That is what makes this portfolio useful to an engineering leader—not only attractive to a visitor.
 
 <br/>
 
