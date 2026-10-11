@@ -1,34 +1,34 @@
-# RISHEH interactive portfolio — GitHub Pages
+# RISHEH interactive portfolio
 
-Static, build-free, bilingual (EN/FA) editorial portfolio.
+The portfolio is a dependency-free static website, not a service requiring a database or API. This branch does not change hosting settings or deploy.
 
-## Publish without GitHub Actions
+## Existing entry points
 
-1. Merge PR #1 (README and brand visual redesign), then merge this site PR.
-2. In **Settings → Pages → Build and deployment**, select **Deploy from a branch**.
-3. Select **main** and **/docs**; save.
-4. GitHub Pages will serve `docs/index.html` at the repository Pages address, normally `https://mahamirmh.github.io/RISHEH-Industry-Solutions-Corporate-Profile/`. This URL is **not confirmed live** until Pages settings and publication succeed.
+- `/docs/index.html` is the main app. Use relative assets; it works under a GitHub Pages repository prefix.
+- Root `index.html` forwards to `docs/index.html`, preserving the query and anchor. With JavaScript disabled it provides a visible link. This fixes the root showing a rendered README when Pages serves the repository root.
+- If Pages is configured to serve `main /docs`, the main app is already that directory's index. Both layouts are supported.
+- Corporate HTML/PDF publications remain byte-for-byte unchanged at repository root. For `/docs`-only Pages hosting, publication URLs must use the GitHub file viewer, since root files are outside that published directory. The app links to the original GitHub publication files for compatibility with either hosting configuration.
 
-> This path uses GitHub Pages' branch publishing process rather than a custom Actions build. Platform Pages publishing status still depends on GitHub account/repository availability.
+## Verify before merge or deployment
 
-## Files
+Use Node 20.11+ (Node 22 recommended). No package installation is needed.
 
-- `index.html` — standalone, responsive HTML/CSS/JS; no external JS/CDN/dependencies.
-- `.nojekyll` — instructs Pages not to run Jekyll transformations.
+```bash
+npm test
+npm run build
+python3 -m http.server 4173 --directory dist
+```
 
-## Ravi typography
+Open `/docs/index.html`. Verify English and Persian, every industry, the story dialog and keyboard focus, menu at phone widths, publications, reduced motion, and the root redirect. Inspect `design-qa.md` for the current verification status. A build or content test alone does not establish visual QA or production verification.
 
-The Persian UI contains `@font-face` declarations for `docs/assets/Ravi-Regular.woff2` and `docs/assets/Ravi-Bold.woff2`, with local fallbacks. **Those font files are not present in the public repository.** Publish only properly licensed optimized WOFF2 files when distribution permission is confirmed. The previously generated Persian PDF has its own embedded font and is unchanged. Do not commit private or unlicensed font binaries.
+## Language and project links
 
-## Verification checklist
+`?lang=fa&industry=health#work` opens Persian with Entekhab selected. Supported industries: education, health, operations, ai, career. Unsupported values use safe defaults. Language preference persists when browser storage is available. Copy comes from `content.js`; immutable README sources are linked from each story.
 
-- Open the landing page on mobile and desktop.
-- Test EN/FA toggle, sector filters, reduced-motion preferences, and PDF/repository links.
-- Verify GitHub Pages configuration and HTTPS.
-- Review product copy and rights to reference the linked projects.
-- Replace abstract product art only with approved, authentic screenshots; current previews are conceptual.
+## Hosting
 
-## Notes
+No GitHub Actions workflow is required or added. Existing branch-based Pages can publish the verified code after an intentional merge. Do not change Pages configuration while preview verification is pending.
 
-- Does not claim every documented repository feature is production verified.
-- All interactive features run locally in the browser; no tracking, account, or server is required.
+## Rollback
+
+Revert the redesign commit. No migrations or customer data changes are involved; original publications are untouched. Restore the previous hosting configuration only if it was separately changed.
