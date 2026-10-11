@@ -34,9 +34,13 @@ At RISHEH, we start with the business problem and work backward toward the right
 
 <br/>
 
-### INDUSTRY SOLUTIONS
+### THE INDUSTRY ATLAS
 
-## Different businesses. Different constraints. One systems mindset.
+## One architecture. Seven business contexts.
+
+<img src="./assets/industry-map.svg" width="100%" alt="A visual map connecting the RISHEH systems approach to seven industry contexts" />
+
+**We don't start with a stack. We start with an operating reality.** Each sector brings its own users, workflows, data responsibilities, and constraints. Our common method becomes a different solution in each context.
 
 The portfolio is organized around the **business environments** we work in—not a generic list of technologies.
 
@@ -55,6 +59,8 @@ The portfolio is organized around the **business environments** we work in—not
 <br/>
 
 ### SELECTED WORK / FIVE DIFFERENT SYSTEMS
+
+> **How to read these stories:** Each project begins with a real product-design question, followed by the documented engineering direction. These are not fictional success stories or claimed business outcomes.
 
 <details open>
 <summary><b>01 — Hamyar School · Education Operating System</b></summary>
@@ -115,6 +121,22 @@ A backend and Telegram-based workflow integrating job ingestion, deterministic m
 [Explore the engineering repository →](https://github.com/mahamirmh/rishehjobnhsbot)
 
 </details>
+
+<br/>
+
+### THE PORTFOLIO PHILOSOPHY
+
+## Fewer promises. Better evidence.
+
+A polished brand should never need imaginary statistics. We show source-linked work, distinguish product documentation from production verification, and keep speculative concepts separate from shipped evidence. That is what makes this portfolio useful to an engineering leader—not only attractive to a visitor.
+
+<br/>
+
+### THE INTERACTIVE EXPERIENCE
+
+A portfolio should be explored, not just downloaded. The new [**RISHEH interactive industry portfolio**](./docs/index.html) brings the story to life with subtle motion, sector filtering, bilingual reading, and direct engineering evidence.
+
+> Deployment: GitHub Pages requires **Settings → Pages → Deploy from a branch → main /docs** after merging. The website is not claimed to be live before GitHub confirms publication.
 
 <br/>
 
